@@ -21,17 +21,21 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //The camera switchs behind the player
         if (Input.GetKeyDown(KeyCode.R)){
         transform.position = Player.transform.position + offsetBehind;
         }
+        //The camera switches to a POV
         if (Input.GetKeyDown(KeyCode.F)){
         transform.position = Player.transform.position + offsetPOV;
         }
+        //The camera turns left a little
         if (Input.GetKeyDown(KeyCode.Q)){
         transform.Rotate(Vector3.down * turnSpeed);
         }
+        //the camera turns right a little
         if (Input.GetKeyDown(KeyCode.E)){
-        transform.Rotate(Vector3.up * turnSpeed);
+        transform.Rotate(Vector3.up * turnSpeed);aw
         }
     }
 }
