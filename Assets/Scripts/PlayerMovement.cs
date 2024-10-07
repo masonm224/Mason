@@ -6,13 +6,13 @@ public class PlayerMovement : MonoBehaviour
 {
     
 
-public float speed = 10;
-public float horizontalInput;
-public float verticalInput;
-private float boundary = 19;
+    public float speed = 10f;
+    public float horizontalInput;
+    public float verticalInput;
+    private float boundary = 19f;
+    
 
-
-// Start is called before the first frame update
+    // Start is called before the first frame update
     void Start()
     {
         
@@ -21,6 +21,13 @@ private float boundary = 19;
     // Update is called once per frame
     void Update()
     {
+        //PlayerMovement
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
+
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
+        transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
+
         //Left Boundary
         if (transform.position.x < -boundary){
             transform.position = new Vector3(-boundary, transform.position.y, transform.position.z);
@@ -37,11 +44,7 @@ private float boundary = 19;
         if (transform.position.z < -boundary){
             transform.position = new Vector3(transform.position.x, transform.position.y, -boundary);
         }
-        //PlayerMovement
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
-
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
-        transform.Translate(Vector2.right * Time.deltaTime * speed * horizontalInput);
-    }
+        
+        
+    }   
 }

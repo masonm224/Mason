@@ -7,7 +7,7 @@ public class FollowPlayer : MonoBehaviour
     
     public GameObject Player;
     private Vector3 offsetBehind = new Vector3(0, 1, -3);
-    private Vector3 offsetPOV = new Vector3(0, 0, 0);
+    private Vector3 offsetPOV = new Vector3(0, 0.5f, 0);
     public float turnSpeed = 6;
 
     // Start is called before the first frame update
@@ -35,7 +35,7 @@ public class FollowPlayer : MonoBehaviour
         }
         //the camera turns right a little
         if (Input.GetKeyDown(KeyCode.E)){
-        transform.Rotate(Vector3.up * turnSpeed);aw
+        transform.Rotate(Vector3.up * turnSpeed);   
         }
     }
 }
