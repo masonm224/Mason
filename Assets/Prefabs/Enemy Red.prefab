@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 2795217028822740707}
   - component: {fileID: 3320838705071104930}
   - component: {fileID: -562283828528168551}
+  - component: {fileID: 5175582822809531386}
+  - component: {fileID: -7013970589224807270}
   m_Layer: 0
   m_Name: Enemy Red
   m_TagString: Untagged
@@ -158,5 +160,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64bd26e623bf5f0448b62d98611d4a36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5175582822809531386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748724276307005947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99c14ca46bf1e94fb5ef5182f612a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7013970589224807270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748724276307005947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99c14ca46bf1e94fb5ef5182f612a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
